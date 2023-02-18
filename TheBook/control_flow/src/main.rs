@@ -121,14 +121,14 @@ fn fahrenheit_to_celsius(fahrenheit: u32) -> u32 {
 }
 
 fn nth_fibonacci(n: i32) {
-    let mut fib_m: i64 = 0;
-    let mut fib_n: i64 = 1;
-    let mut memory: i64;
     if n < 1 {
         println!("n shall be an integer higher than or equal to 1.");
     } else {
+        let mut fib_m: i64 = 0;
         println!("Integer 1: {fib_m}");
         if n > 1 {
+            let mut fib_n: i64 = 1;
+            let mut memory: i64;
             for i in 1..n {
                 println!("Integer {}: {fib_n}", i + 1);
                 memory = fib_n;
